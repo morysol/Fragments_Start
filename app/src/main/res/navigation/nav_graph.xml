@@ -20,7 +20,19 @@
         android:label="fragment_more_info"
         tools:layout="@layout/fragment_more_info">
         <action
+            android:id="@+id/action_moreInfo_to_fullInfo"
+            app:destination="@id/fullInfo" />
+        <action
             android:id="@+id/action_moreInfo_to_mainList"
             app:destination="@id/mainList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullInfo"
+        android:name="com.fragments_start.FullInfo"
+        android:label="fragment_full_info"
+        tools:layout="@layout/fragment_full_info">
+        <action
+            android:id="@+id/action_fullInfo_to_moreInfo"
+            app:destination="@id/moreInfo" />
     </fragment>
 </navigation>

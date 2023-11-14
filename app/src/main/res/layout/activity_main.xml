@@ -7,38 +7,21 @@
     android:padding="8dp"
     tools:context=".MainActivity">
 
-    <!--        android:name="com.fragments_start.MainList"-->
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_list"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#7E7E7E"
+        android:background="#C0C0C0"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/more_info"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".3"
 
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"
-
-        />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/more_info"
-        android:name="com.fragments_start.MoreInfo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#28971C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/main_list"
-        app:layout_constraintTop_toTopOf="@id/main_list"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".7" />
+        app:navGraph="@navigation/nav_graph" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8A0808"
-    tools:context=".MoreInfo">
+    tools:context=".FullInfo">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/more_info"
+        android:id="@+id/full_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="more  info" />
+        android:background="#00FC36"
+        android:text="full info here" />
 
 </FrameLayout>
