@@ -34,5 +34,9 @@
         <action
             android:id="@+id/action_fullInfo_to_moreInfo"
             app:destination="@id/moreInfo" />
+        <argument
+            android:name="testArg"
+            app:argType="string"
+            android:defaultValue="test string" />
     </fragment>
 </navigation>

@@ -10,7 +10,7 @@
         android:id="@+id/full_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00FC36"
+        android:background="#7FD291"
         android:text="full info here" />
 
 </FrameLayout>

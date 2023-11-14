@@ -21,18 +21,18 @@ class MoreInfo : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
         binding = FragmentMoreInfoBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.root.setOnClickListener { findNavController().navigate(MoreInfoDirections.actionMoreInfoToMainList()) }
-
-        binding.moreInfo.setOnClickListener { findNavController().navigate(MoreInfoDirections.actionMoreInfoToFullInfo()) }
-
+        binding.back.setOnClickListener { findNavController().navigate(MoreInfoDirections.actionMoreInfoToMainList()) }
+        binding.more.setOnClickListener {
+            findNavController().navigate(
+                MoreInfoDirections.actionMoreInfoToFullInfo()
+            )
+        }
     }
 
 }
