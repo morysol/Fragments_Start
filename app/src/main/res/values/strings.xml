@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Fragments_Start</string>
 
-    <string name="animal">Animals</string>
+    <string name="animal">Animals from www.treehugger.com </string>
+    <string name="animal_type">animal type</string>
+    <string name="put_text_here">put text here</string>
 </resources>

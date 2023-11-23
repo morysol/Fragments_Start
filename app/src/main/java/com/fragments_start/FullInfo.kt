@@ -1,14 +1,15 @@
 package com.fragments_start
 
+
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.fragments_start.databinding.FragmentFullInfoBinding
 
 
@@ -26,12 +27,25 @@ class FullInfo : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.fullInfo.setOnClickListener { findNavController().navigate(FullInfoDirections.actionFullInfoToMoreInfo()) }
+        binding.fullInfo.setOnClickListener {
+            //
+            findNavController().popBackStack()
+        }
 
         val args: FullInfoArgs by navArgs()
 
-        Log.d("TAG", args.testArg)
-        binding.fullInfo.text = args.testArg
+
+        binding.fullInfo.text = args.fullInfo.infoFull
+        Log.d("TAG", this.toString())
+        Log.d("TAG", binding.imageView.toString())
+        // Glide.with(this).load(args.fullInfo.picture).load(binding.imageView)
+//        Glide.with(this)
+//            .load("http://developer.alexanderklimov.ru/android/images/android_cat.jpg")
+//            .into(binding.imageView)
+        //  binding.imageView.setImageResource(args.fullInfo.picture)
+        Glide.with(this)
+            .load(args.fullInfo.picture)
+            .into(binding.imageView)
     }
 
 }

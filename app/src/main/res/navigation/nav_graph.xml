@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainList"
-        android:name="com.fragments_start.MainList"
+        android:name="com.fragments_start.MainListFragment"
         android:label="fragment_main_list"
         tools:layout="@layout/fragment_main_list">
         <action
@@ -22,21 +22,17 @@
         <action
             android:id="@+id/action_moreInfo_to_fullInfo"
             app:destination="@id/fullInfo" />
-        <action
-            android:id="@+id/action_moreInfo_to_mainList"
-            app:destination="@id/mainList" />
+        <argument
+            android:name="animal"
+            app:argType="com.fragments_start.Animal" />
     </fragment>
     <fragment
         android:id="@+id/fullInfo"
         android:name="com.fragments_start.FullInfo"
         android:label="fragment_full_info"
         tools:layout="@layout/fragment_full_info">
-        <action
-            android:id="@+id/action_fullInfo_to_moreInfo"
-            app:destination="@id/moreInfo" />
         <argument
-            android:name="testArg"
-            app:argType="string"
-            android:defaultValue="test string" />
+            android:name="fullInfo"
+            app:argType="com.fragments_start.Animal" />
     </fragment>
 </navigation>

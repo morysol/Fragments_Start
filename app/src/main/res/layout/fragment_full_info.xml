@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullInfoContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FullInfo">
 
-    <!-- TODO: Update blank fragment layout -->
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/full_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#7FD291"
-        android:text="full info here" />
+        android:text="@string/put_text_here" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/animal_type"
+        app:srcCompat="@drawable/bear" />
+
+</LinearLayout>
