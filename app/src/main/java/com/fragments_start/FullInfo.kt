@@ -6,6 +6,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -43,6 +45,12 @@ class FullInfo : Fragment() {
 //            .load("http://developer.alexanderklimov.ru/android/images/android_cat.jpg")
 //            .into(binding.imageView)
         //  binding.imageView.setImageResource(args.fullInfo.picture)
+
+        val animation: Animation =
+            AnimationUtils.loadAnimation(binding.imageView.context, R.anim.common_animation)
+        binding.imageView.startAnimation(animation)
+
+
         Glide.with(this)
             .load(args.fullInfo.picture)
             .into(binding.imageView)

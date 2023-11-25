@@ -12,13 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#7FD291"
-        android:text="@string/put_text_here" />
+        android:padding="12dp"
+        android:text="@string/put_text_here"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/animal_type"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/bear" />
 
 </LinearLayout>

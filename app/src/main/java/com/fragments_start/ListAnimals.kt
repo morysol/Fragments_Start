@@ -33,7 +33,7 @@ class ListAnimals {
             animalType = "turtle",
             infoShort = "As the weather warms up, turtles and tortoises are on the move",
             infoFull = "Because turtles are long-lived species that mature slowly and have fairly low reproductive outputs, the survival and longevity of adults, especially females, is critical to the survival of populations",
-            picture = R.drawable.cat
+            picture = R.drawable.turtle
 
         ), Animal(
             animalType = "elephant",

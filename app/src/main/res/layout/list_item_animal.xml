@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_animal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:id="@+id/item_animal"
-    android:background="#FDD835"
-    android:layout_marginTop="32dp">
+    android:layout_marginTop="8dp"
+
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/picture_animal"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/animal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="2" />
 
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/type"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/animal_type"
-        android:textSize="34sp"
+
+        android:textAlignment="center"
+
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/picture_animal"
         app:layout_constraintTop_toTopOf="parent" />
 
 

@@ -35,6 +35,8 @@ class AdapterAnimal(val onClick: (model: Animal, position: Int) -> Unit) :
         fun bind(animal: Animal, position: Int) = with(binding) {
             type.text = animal.animalType
 //            info.text = animal.infoShort
+            pictureAnimal.setImageResource(animal.picture)
+
 
             // по клику вернет объект и номер
             binding.itemAnimal.setOnClickListener {
