@@ -10,10 +10,10 @@ import androidx.navigation.fragment.navArgs
 import com.fragments_start.databinding.FragmentMoreInfoBinding
 
 
-class MoreInfo : Fragment() {
+class MoreInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentMoreInfoBinding
-    val args: MoreInfoArgs by navArgs()
+    val args: MoreInfoFragmentArgs by navArgs()
 
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
@@ -40,7 +40,7 @@ class MoreInfo : Fragment() {
         }
         binding.more.setOnClickListener {
             findNavController().navigate(
-                MoreInfoDirections.actionMoreInfoToFullInfo(args.animal)
+                MoreInfoFragmentDirections.actionMoreInfoToFullInfo(args.animal)
             )
         }
     }

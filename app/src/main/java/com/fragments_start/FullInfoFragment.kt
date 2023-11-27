@@ -15,7 +15,7 @@ import com.bumptech.glide.Glide
 import com.fragments_start.databinding.FragmentFullInfoBinding
 
 
-class FullInfo : Fragment() {
+class FullInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentFullInfoBinding
 
@@ -34,7 +34,7 @@ class FullInfo : Fragment() {
             findNavController().popBackStack()
         }
 
-        val args: FullInfoArgs by navArgs()
+        val args: FullInfoFragmentArgs by navArgs()
 
 
         binding.fullInfo.text = args.fullInfo.infoFull

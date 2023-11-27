@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/moreInfo"
-        android:name="com.fragments_start.MoreInfo"
+        android:name="com.fragments_start.MoreInfoFragment"
         android:label="fragment_more_info"
         tools:layout="@layout/fragment_more_info">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/fullInfo"
-        android:name="com.fragments_start.FullInfo"
+        android:name="com.fragments_start.FullInfoFragment"
         android:label="fragment_full_info"
         tools:layout="@layout/fragment_full_info">
         <argument
