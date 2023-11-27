@@ -7,17 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.fragments_start.databinding.FragmentMoreInfoBinding
 
 
 class MoreInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentMoreInfoBinding
-    val args: MoreInfoFragmentArgs by navArgs()
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//    }
+    private val args: MoreInfoFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +28,13 @@ class MoreInfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.moreInfo.text = args.animal.infoShort
+        binding.moreInfoPicture.setImageResource(args.animal.picture)
+
+
+        Glide.with(this)
+            .load(args.animal.url)
+            .into(binding.moreInfoPicture)
+
 
         binding.back.setOnClickListener {
             //

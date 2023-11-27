@@ -38,8 +38,6 @@ class FullInfoFragment : Fragment() {
 
 
         binding.fullInfo.text = args.fullInfo.infoFull
-        Log.d("TAG", this.toString())
-        Log.d("TAG", binding.imageView.toString())
         // Glide.with(this).load(args.fullInfo.picture).load(binding.imageView)
 //        Glide.with(this)
 //            .load("http://developer.alexanderklimov.ru/android/images/android_cat.jpg")

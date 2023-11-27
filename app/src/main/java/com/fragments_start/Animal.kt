@@ -9,4 +9,5 @@ data class Animal(
     val infoShort: String,
     val infoFull: String,
     val picture: Int,
+    val url: String,
 ) : Parcelable
