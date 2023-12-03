@@ -4,9 +4,10 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDA8A8"
+    android:background="@drawable/gradient"
 
     android:orientation="vertical">
+    <!--    android:background="#EDA8A8"-->
 
     <TextView
         android:id="@+id/more_info"
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:text="more  info"
+        android:textColor="?attr/colorSurfaceDim"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,11 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:padding="8dp"
-        android:text="back"
+        android:text="@string/back"
         app:layout_constraintEnd_toStartOf="@id/more"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/more_info" />
+        app:layout_constraintTop_toBottomOf="@+id/more_info"
+        android:textColor="@color/btn_more_info" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/more"
@@ -37,18 +40,19 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:padding="8dp"
-        android:text="more"
+        android:text="@string/more"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/more_info" />
+        app:layout_constraintTop_toBottomOf="@+id/more_info"
+        android:textColor="@color/btn_more_info" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/more_info_picture"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/animal"
         android:cropToPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -14,18 +14,18 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_margin="8dp"
-        app:layout_constraintHorizontal_chainStyle="spread"
-
-
         android:layout_marginEnd="8dp"
+
+
         android:contentDescription="@string/animal"
         android:scaleType="centerCrop"
-        tool:src="@drawable/bear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/type"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_weight="2" />
+        tool:src="@drawable/bear" />
 
 
     <androidx.appcompat.widget.AppCompatTextView

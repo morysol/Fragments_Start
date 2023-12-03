@@ -2,7 +2,6 @@ package com.fragments_start
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,11 +37,6 @@ class FullInfoFragment : Fragment() {
 
 
         binding.fullInfo.text = args.fullInfo.infoFull
-        // Glide.with(this).load(args.fullInfo.picture).load(binding.imageView)
-//        Glide.with(this)
-//            .load("http://developer.alexanderklimov.ru/android/images/android_cat.jpg")
-//            .into(binding.imageView)
-        //  binding.imageView.setImageResource(args.fullInfo.picture)
 
         val animation: Animation =
             AnimationUtils.loadAnimation(binding.imageView.context, R.anim.common_animation)

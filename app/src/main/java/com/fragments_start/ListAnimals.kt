@@ -32,7 +32,7 @@ class ListAnimals {
             infoShort = "Female killer whales, also known as orcas",
             infoFull = " Live up to 90 years in the wild—with an average of 22 years when they are no longer able to reproduce. Only six species of animals—humans and five species of toothed whales—are known to experience menopause",
             picture = R.drawable.orca,
-            url = "https://pixabay.com/get/g175a216f6de35e1a910f3b55302dea023f15d458e4f7998d0de707b04a20ef9cbe3109fd245182982ace9c5b9985b3be6b2db75bf2e2d1e5284f78d03c099d1f_640.jpg"
+            url = "https://pixabay.com/get/g81bd74ae9c327865064664679b343915ec901089901aa348e5767bc19efd1cf38e40a06ceefcd64c0d915a8bdd04152d_640.jpg"
 
         ), Animal(
             animalType = "turtle",

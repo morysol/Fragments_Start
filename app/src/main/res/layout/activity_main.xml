@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_action"
+        app:title="@string/app_title"
+        style="@style/Toolbar"
+        app:titleTextAppearance="@style/Toolbar"
+        app:popupTheme="@style/MyToolbarStyle"
+
+        />
+
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_list"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -14,13 +30,31 @@
         android:background="#C0C0C0"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
 
         app:navGraph="@navigation/nav_graph" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<androidx.appcompat.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--style="@style/Toolbar"-->
+    <!--android:layout_width="0dp"-->
+
+    <!--app:layout_constraintBottom_toTopOf="@id/main_list"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:title="@string/app_title"-->
+    <!--app:menu="@menu/menu_action"-->
+    <!--app:popupTheme="@style/MyToolbarStyle"-->
+
+    <!--    >-->
+
+
+    <!--</androidx.appcompat.widget.Toolbar>-->
