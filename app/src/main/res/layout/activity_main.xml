@@ -11,13 +11,12 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/menu_action"
         app:title="@string/app_title"
-        style="@style/Toolbar"
+
+        android:theme="@style/Toolbar"
         app:titleTextAppearance="@style/Toolbar"
-        app:popupTheme="@style/MyToolbarStyle"
+
 
         />
 
@@ -39,22 +38,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <!--<androidx.appcompat.widget.Toolbar-->
-    <!--android:id="@+id/toolbar"-->
-    <!--style="@style/Toolbar"-->
-    <!--android:layout_width="0dp"-->
-
-    <!--app:layout_constraintBottom_toTopOf="@id/main_list"-->
-    <!--app:layout_constraintEnd_toEndOf="parent"-->
-    <!--app:layout_constraintStart_toStartOf="parent"-->
-    <!--app:layout_constraintTop_toTopOf="parent"-->
-    <!--app:title="@string/app_title"-->
-    <!--app:menu="@menu/menu_action"-->
-    <!--app:popupTheme="@style/MyToolbarStyle"-->
-
-    <!--    >-->
-
-
-    <!--</androidx.appcompat.widget.Toolbar>-->

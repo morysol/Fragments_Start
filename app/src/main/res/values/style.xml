@@ -11,33 +11,12 @@
     <style name="Toolbar" parent="Base.Theme.Fragments_Start">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
-        <!-- <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item> -->
         <item name="android:background">@color/design_default_color_primary</item>
-        <item name="android:titleTextColor">@color/design_default_color_primary</item>
-        <item name="android:colorBackground">@color/design_default_color_primary</item>
+
         <item name="android:textColor">?attr/colorSurfaceDim</item>
-        <!--        <item name="titleTextColor">?attr/colorSurfaceDim</item>-->
+        <item name="android:textColorSecondary">@color/cardview_light_background</item>
+
     </style>
 
-
-    <style name="TextAppearance.MayApp.Toolbar" parent="TextAppearance.MyApp.Body">
-        <item name="textAllCaps">true</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-
-    <!--    Body    -->
-    <style name="TextAppearance.MyApp.Body" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textSize">14sp</item>
-        <item name="lineHeight">20sp</item>
-
-        <item name="android:textColor">?attr/colorOnSurface</item>
-        <item name="android:letterSpacing">0</item>
-    </style>
-
-    <!--qqq-->
-    <style name="MyToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:background">#c0c0c0</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
 
 </resources>
